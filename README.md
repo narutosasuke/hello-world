@@ -1,49 +1,5 @@
 # hello-world
-this is a learning project
-
-
-// Backbone Model
-
-var Book = Backbone.Model.extend({
-	defaults: {
-		book: '',
-		author: '',
-		price: ''
-	}
-
-
-// instantiate 2 models
-
-var book1 = new Book({
-	book: 'A Bend in the River',
-	author: 'V. S. Naipaul',
-	price: '100'
-});
-
-
-var book3 = new Book({
-	book: '22 Days in India',
-	author: 'Anurag Mathur',
-	price: '50'
-});
-
-
-// instantiate a Collection
-
-var books = new Books([book1,book2,book3]);
-
-// Backbone View for one book
-
-var BookView = Backbone.View.extend({
-	model: new Book(),
-	tagName: 'tr',
-	initialize: function() {
-		this.template = _.template($('.book-list-template').html());
-		console.log("template called");
-	},
-	events: {
-		'click .edit-book': 'edit',
-		'click .update-book': 'update',
+asd
 		'click .cancel': 'cancel',
 		'click .delete-book': 'delete'
 		
