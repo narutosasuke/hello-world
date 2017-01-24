@@ -10,15 +10,7 @@ var Book = Backbone.Model.extend({
 		author: '',
 		price: ''
 	}
-});
 
-// Backbone Collection
-var Books = Backbone.Collection.extend({
-	initialize: function() {
-	
-		console.log("collection called");
-	}
-});
 
 // instantiate 2 models
 
@@ -28,11 +20,6 @@ var book1 = new Book({
 	price: '100'
 });
 
-var book2 = new Book({
-	book: 'A Better India : A Better World',
-	author: 'N. R. Narayana Murthy',
-	price: '200'
-});
 
 var book3 = new Book({
 	book: '22 Days in India',
