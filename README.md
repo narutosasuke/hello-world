@@ -87,12 +87,8 @@ var BookView = Backbone.View.extend({
 	delete: function() {
 		this.model.destroy();
 	},
-	render: function() {
-		var data = this.model.toJSON();
-		console.log(data);
-		this.$el.html(this.template(data));
-		return this;
-	}
+	this sis somethin g thatcan be rendered using backbone layout manager
+	
 });
 
 // Backbone View for collection
