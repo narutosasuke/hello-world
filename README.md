@@ -38,16 +38,7 @@ var BookView = Backbone.View.extend({
 	model: new Book(),
 	tagName: 'tr',
 	initialize: function() {
-		this.template = _.template($('.book-list-template').html());
-		console.log("template called");
-	},
-	events: {
-		'click .edit-book': 'edit',
-		'click .update-book': 'update',
-		'click .cancel': 'cancel',
-		'click .delete-book': 'delete'
-		
-	},
+
 	 
 	edit: function() {
 		$('.edit-book').hide();
